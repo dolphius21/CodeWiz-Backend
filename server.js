@@ -10,8 +10,6 @@ const connectionString = process.env.CONNECTION_STRING;
 mongoose
   .connect(connectionString, {
     useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
     useUnifiedTopology: true
   })
   .then(() => console.log('MongoDB connection successful!'));
